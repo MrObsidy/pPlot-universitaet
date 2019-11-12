@@ -10,10 +10,7 @@ import java.util.List;
 
 public class WriteHelper {
 	public static void writeArrayToFile(ArrayList<String> strings, String fileName){
-		List<String> lines = new ArrayList<String>();
-		for(String string : strings){
-			lines.add(string + "\n");
-		}
+		List<String> lines = strings;
 		
 		Path path = Paths.get(fileName);
 		
